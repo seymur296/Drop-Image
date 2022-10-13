@@ -1,0 +1,60 @@
+.DropArea {
+  padding: 50px;
+  text-align: center;
+  -webkit-box-shadow: inset 0 0 20px 0 #ccc;
+          box-shadow: inset 0 0 20px 0 #ccc;
+}
+
+.DropArea .drop-content {
+  border: 1px dashed brown;
+  padding: 50px;
+}
+
+.DropArea .drop-content.active p {
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+}
+
+.DropArea .drop-content.active i {
+  opacity: 1;
+  visibility: visible;
+  -webkit-animation: myAni 1s infinite;
+          animation: myAni 1s infinite;
+}
+
+.DropArea .drop-content p {
+  font-size: 1.5rem;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  pointer-events: none;
+}
+
+.DropArea .drop-content i {
+  font-size: 1.2rem;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+@-webkit-keyframes myAni {
+  from {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  to {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+}
+
+@keyframes myAni {
+  from {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  to {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+}
+/*# sourceMappingURL=style.css.map */
